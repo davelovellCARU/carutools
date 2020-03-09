@@ -11,6 +11,10 @@ This function returns the hexademical code of a Church Army colour by name.
 
 Note that these names are consistent with Church Army branding guides, rather than strictly accurate. 
 
+### Example:
+
+`ca_col(c("lightteal", "lime))`
+
 ## `ca_secondary`
 
 This function returns a charcter vector containing the hexadecimal codes for the Church Army secondary pallete:
