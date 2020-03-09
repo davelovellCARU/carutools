@@ -1,7 +1,6 @@
 ca_cols <-
   function(cols = NULL)
   {
-
     # All church Army Colours ------------------------------------
     allCaColours <-
       c("orange" = "#e84619",
@@ -28,4 +27,17 @@ ca_cols <-
     outputCols <- allCaColours[cols]
 
     return(outputCols)
+  }
+
+ca_secondary <-
+  function()
+  {
+    secondaryCols <- c("orange" = "#e84619",
+                       "lime" = "#e1de00",
+                       "gold" = "#fbc900",
+                       "purple" = "#523178",
+                       "green" = "#509e2f",
+                       "maroon" = "#910048",
+                       "cyan" = "#0092bc")
+    return(secondaryCols)
   }
