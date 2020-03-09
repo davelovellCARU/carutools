@@ -31,7 +31,7 @@ ggplot(data, aes(x = var1, y = var2) +
 ## `ca_tertiary`
 
 This function returns a charcter vector containing the hexadecimal codes for the Church Army secondary pallete:
-`c("lightteal" = "6c8b93", "#6f2c3f", "darkteal" = "#006272")`
+`c("lightteal" = "6c8b93", "brown" = "#6f2c3f", "darkteal" = "#006272")`
 
 ### Example:
 
