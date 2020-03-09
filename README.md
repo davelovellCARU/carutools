@@ -7,13 +7,13 @@ A toolbox of functions useful to Church Army's Research Unit. Currently only con
 
 ## `ca_col()`
 
-This function returns the hexademical code of a Church Army colour by name. 
+This function returns the hexademical code of one or more Church Army colours by name. 
 
 Note that these names are consistent with Church Army branding guides, rather than strictly accurate. 
 
 ### Example:
 
-`ca_col(c("lightteal", "lime))`
+`ca_col(c("lightteal", "lime"))`
 
 ## `ca_secondary`
 
