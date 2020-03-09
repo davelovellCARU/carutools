@@ -41,3 +41,12 @@ ca_secondary <-
                        "cyan" = "#0092bc")
     return(secondaryCols)
   }
+
+ca_tertiary <-
+  function()
+  {
+    tertiaryCols <- c("lightteal" = "6c8b93",
+                      "brown" = "#6f2c3f",
+                      "darkteal" = "#006272")
+    return(tertiaryCols)
+  }
