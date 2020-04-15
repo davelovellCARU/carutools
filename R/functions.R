@@ -1,6 +1,6 @@
 
 # Retrurn secondary colours as vector -------------------------------------
-ca_secondary_cols <- function(with.names = FALSE) {
+ct_secondary_cols <- function(with.names = FALSE) {
   cols <-
     c(
       "orange" = "#e84619",
@@ -18,7 +18,7 @@ ca_secondary_cols <- function(with.names = FALSE) {
 }
 
 # Retrurn tertiary colours as vector --------------------------------------
-ca_tertiary_cols <- function(with.names = FALSE) {
+ct_tertiary_cols <- function(with.names = FALSE) {
   cols <-
   c("lightteal" = "#6c8b93",
     "brown" = "#6f2c3f",
@@ -30,18 +30,18 @@ ca_tertiary_cols <- function(with.names = FALSE) {
 }
 
 # Return all colours as vector
-ca_all_cols <- function(with.names = FALSE){
+ct_all_cols <- function(with.names = FALSE){
   c(carutools::ca_secondary_cols(with.names = with.names),
     carutools::ca_tertiary_cols(with.names = with.names))}
 
 ## Return individual Colours ----------------------------------------------
-ca_orange <- function()   {carutools::ca_all_cols(with.names = TRUE)[["orange"]]}
-ca_lime <- function()     {carutools::ca_all_cols(with.names = TRUE)[["lime"]]}
-ca_gold <- function()     {carutools::ca_all_cols(with.names = TRUE)[["gold"]]}
-ca_purple <- function()   {carutools::ca_all_cols(with.names = TRUE)[["purple"]]}
-ca_green <- function()    {carutools::ca_all_cols(with.names = TRUE)[["green"]]}
-ca_maroon <- function()   {carutools::ca_all_cols(with.names = TRUE)[["maroon"]]}
-ca_cyan <- function()     {carutools::ca_all_cols(with.names = TRUE)[["cyan"]]}
-ca_lightteal <- function(){carutools::ca_all_cols(with.names = TRUE)[["lightteal"]]}
-ca_brown <- function()    {carutools::ca_all_cols(with.names = TRUE)[["brown"]]}
-ca_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"]]}
+ct_orange <- function()   {carutools::ca_all_cols(with.names = TRUE)[["orange"]]}
+ct_lime <- function()     {carutools::ca_all_cols(with.names = TRUE)[["lime"]]}
+ct_gold <- function()     {carutools::ca_all_cols(with.names = TRUE)[["gold"]]}
+ct_purple <- function()   {carutools::ca_all_cols(with.names = TRUE)[["purple"]]}
+ct_green <- function()    {carutools::ca_all_cols(with.names = TRUE)[["green"]]}
+ct_maroon <- function()   {carutools::ca_all_cols(with.names = TRUE)[["maroon"]]}
+ct_cyan <- function()     {carutools::ca_all_cols(with.names = TRUE)[["cyan"]]}
+ct_lightteal <- function(){carutools::ca_all_cols(with.names = TRUE)[["lightteal"]]}
+ct_brown <- function()    {carutools::ca_all_cols(with.names = TRUE)[["brown"]]}
+ct_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"]]}
