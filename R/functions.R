@@ -50,8 +50,7 @@ ct_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"
 ### Show spelling mistakes for every character column in a tibble
 ### Note this only works with the development version of dplry
 ct_tibble_spellcheck <- function(data) {
-  dplyr::transmute(dplyr::rowwise(data),
-                   dplyr::across(is.character, unlist(hunspell::hunspell)))
+  dplyr::transmute(data, dplyr::across(is.character, hunspell::hunspell))
 }
 
 ### Get regex for UK postcodes
