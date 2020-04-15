@@ -1,3 +1,4 @@
+### CA Colour Functions
 
 # Retrurn secondary colours as vector -------------------------------------
 ct_secondary_cols <- function(with.names = FALSE) {
@@ -45,3 +46,10 @@ ct_cyan <- function()     {carutools::ca_all_cols(with.names = TRUE)[["cyan"]]}
 ct_lightteal <- function(){carutools::ca_all_cols(with.names = TRUE)[["lightteal"]]}
 ct_brown <- function()    {carutools::ca_all_cols(with.names = TRUE)[["brown"]]}
 ct_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"]]}
+
+### Show spelling mistakes for every character column in a tibble
+### Note this only works with the development version of dplry
+ct_tibble_spellcheck <- function(data) {
+  dplyr::transmute(dplyr::rowwise(data),
+                   dplry::across(tidyr::everything, hunspell::hunspell))
+}
