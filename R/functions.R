@@ -51,7 +51,7 @@ ct_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"
 ### Note this only works with the development version of dplry
 ct_tibble_spellcheck <- function(data) {
   dplyr::transmute(dplyr::rowwise(data),
-                   dplyr::across(tidyr::everything, hunspell::hunspell))
+                   dplyr::across(as.character, hunspell::hunspell))
 }
 
 ### Get regex for UK postcodes
