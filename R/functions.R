@@ -60,3 +60,4 @@ ct_postcode_regex <- function(anchors = TRUE){
 }
 
 ct_is_postcode <- function(vector) stringr::str_detect(vector, carutools::ct_postcode_regex(anchors = TRUE))
+ct_contains_postcode <- function(vector) stringr::str_detect(vector, carutools::ct_postcode_regex(anchors = FALSE))
