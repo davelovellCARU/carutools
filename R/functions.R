@@ -32,20 +32,20 @@ ct_tertiary_cols <- function(with.names = FALSE) {
 
 # Return all colours as vector
 ct_all_cols <- function(with.names = FALSE){
-  c(carutools::ca_secondary_cols(with.names = with.names),
-    carutools::ca_tertiary_cols(with.names = with.names))}
+  c(carutools::ct_secondary_cols(with.names = with.names),
+    carutools::ct_tertiary_cols(with.names = with.names))}
 
 ## Return individual Colours ----------------------------------------------
-ct_orange <- function()   {carutools::ca_all_cols(with.names = TRUE)[["orange"]]}
-ct_lime <- function()     {carutools::ca_all_cols(with.names = TRUE)[["lime"]]}
-ct_gold <- function()     {carutools::ca_all_cols(with.names = TRUE)[["gold"]]}
-ct_purple <- function()   {carutools::ca_all_cols(with.names = TRUE)[["purple"]]}
-ct_green <- function()    {carutools::ca_all_cols(with.names = TRUE)[["green"]]}
-ct_maroon <- function()   {carutools::ca_all_cols(with.names = TRUE)[["maroon"]]}
-ct_cyan <- function()     {carutools::ca_all_cols(with.names = TRUE)[["cyan"]]}
-ct_lightteal <- function(){carutools::ca_all_cols(with.names = TRUE)[["lightteal"]]}
-ct_brown <- function()    {carutools::ca_all_cols(with.names = TRUE)[["brown"]]}
-ct_darkteal <- function() {carutools::ca_all_cols(with.names = TRUE)[["darkteal"]]}
+ct_orange <- function()   {carutools::ct_all_cols(with.names = TRUE)[["orange"]]}
+ct_lime <- function()     {carutools::ct_all_cols(with.names = TRUE)[["lime"]]}
+ct_gold <- function()     {carutools::ct_all_cols(with.names = TRUE)[["gold"]]}
+ct_purple <- function()   {carutools::ct_all_cols(with.names = TRUE)[["purple"]]}
+ct_green <- function()    {carutools::ct_all_cols(with.names = TRUE)[["green"]]}
+ct_maroon <- function()   {carutools::ct_all_cols(with.names = TRUE)[["maroon"]]}
+ct_cyan <- function()     {carutools::ct_all_cols(with.names = TRUE)[["cyan"]]}
+ct_lightteal <- function(){carutools::ct_all_cols(with.names = TRUE)[["lightteal"]]}
+ct_brown <- function()    {carutools::ct_all_cols(with.names = TRUE)[["brown"]]}
+ct_darkteal <- function() {carutools::ct_all_cols(with.names = TRUE)[["darkteal"]]}
 
 ### Show spelling mistakes for every character column in a tibble
 ### Note this only works with the development version of dplry
